@@ -54,4 +54,14 @@ public class ScoreManager : MonoBehaviour {
 		}
 	}
 
+	void Update()
+	{
+		if (score >= targetScore)
+		{
+			Time.timeScale = 0;
+			youWon.SetActive(true);
+		}
+	}
+
+
 }
