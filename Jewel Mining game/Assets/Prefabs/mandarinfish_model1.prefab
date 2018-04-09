@@ -398,6 +398,7 @@ GameObject:
   - component: {fileID: 111756903648100364}
   - component: {fileID: 65346652389050504}
   - component: {fileID: 114045195935004336}
+  - component: {fileID: 54531030395312826}
   m_Layer: 0
   m_Name: mandarinfish_model1
   m_TagString: Jewel
@@ -841,7 +842,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1848778856472402}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4409012405133048}
@@ -886,6 +887,21 @@ Transform:
   m_Father: {fileID: 4328359845832150}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &54531030395312826
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1848778856472402}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &65346652389050504
 BoxCollider:
   m_ObjectHideFlags: 1

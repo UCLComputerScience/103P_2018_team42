@@ -232,7 +232,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4703459253329320, guid: 074921010b0614f47801d4c7bf6f1b37, type: 2}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1.1366105
       objectReference: {fileID: 0}
     - target: {fileID: 4785370625262360, guid: 074921010b0614f47801d4c7bf6f1b37, type: 2}
       propertyPath: m_LocalPosition.x
@@ -379,6 +379,18 @@ Prefab:
     - target: {fileID: 1421489161872204, guid: 074921010b0614f47801d4c7bf6f1b37, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703459253329320, guid: 074921010b0614f47801d4c7bf6f1b37, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703459253329320, guid: 074921010b0614f47801d4c7bf6f1b37, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703459253329320, guid: 074921010b0614f47801d4c7bf6f1b37, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.9323326
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 074921010b0614f47801d4c7bf6f1b37, type: 2}
@@ -1342,15 +1354,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xRange: 10
   yRange: 3
-  numObjects: 7
+  numObjects: 1
   objects:
-  - {fileID: 1453906313178546, guid: 52cdc3b408cbc4d5694eed3ccc01eb49, type: 2}
   - {fileID: 1848778856472402, guid: 40258bc488ed44150947c71259e4e7df, type: 2}
-  - {fileID: 1786817833207500, guid: 97a1d219afbd0498b838f2355231952c, type: 2}
-  - {fileID: 1712673490207460, guid: c2b1dcca07297460683f10795808b746, type: 2}
-  - {fileID: 1787085765216054, guid: 528dcb61b61654f1c8e8e87b669fd817, type: 2}
-  - {fileID: 1352540009071150, guid: b39ccb18eb5544956a0f7c7c08546bbd, type: 2}
-  - {fileID: 1190147106918950, guid: 4c479cbcf07894eafaa964ea0b939f86, type: 2}
 --- !u!1 &1441930732
 GameObject:
   m_ObjectHideFlags: 0
@@ -2143,7 +2149,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2039637261}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

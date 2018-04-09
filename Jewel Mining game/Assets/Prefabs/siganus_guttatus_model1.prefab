@@ -111,6 +111,7 @@ GameObject:
   - component: {fileID: 4282992987016902}
   - component: {fileID: 111163496650371332}
   - component: {fileID: 114712822917406256}
+  - component: {fileID: 65710004656352034}
   m_Layer: 0
   m_Name: siganus_guttatus_model1
   m_TagString: Jewel
@@ -850,7 +851,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1045389946426970}
-  m_LocalRotation: {x: -0.5010363, y: 0.06846204, z: 0.86249846, w: -0.0192842}
+  m_LocalRotation: {x: -0.50103635, y: 0.068462044, z: 0.8624986, w: -0.019284202}
   m_LocalPosition: {x: -0.05867748, y: -0.060541295, z: 0.11240091}
   m_LocalScale: {x: 1, y: 1, z: 0.9999997}
   m_Children:
@@ -885,6 +886,18 @@ Transform:
   m_Father: {fileID: 4282992987016902}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &65710004656352034
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1115759032668160}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!111 &111163496650371332
 Animation:
   m_ObjectHideFlags: 1
