@@ -2085,6 +2085,7 @@ GameObject:
   - component: {fileID: 2039637264}
   - component: {fileID: 2039637263}
   - component: {fileID: 2039637262}
+  - component: {fileID: 2039637266}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2155,6 +2156,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2039637266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2039637261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eda405ccf000dd149a388e47af9b631b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useRecordedData: 1
+  loop: 1
+  recordedDataPath: Data/FizzyoData_3min.fiz
+  recordedData: []
+  recordedIndex: 0
+  text: ' '
+  pollTimer: 0
+  pollTimerInterval: 0.3
+  pressure: 0
 --- !u!1 &2078736670
 GameObject:
   m_ObjectHideFlags: 0

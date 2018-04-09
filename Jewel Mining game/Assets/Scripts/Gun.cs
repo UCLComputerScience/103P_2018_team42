@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+//use Fizzyo namespace
+using Fizzyo;
 
 public class Gun : MonoBehaviour {
 
@@ -8,15 +10,56 @@ public class Gun : MonoBehaviour {
 	public Animator minerAnimator;
 	public Claw clawScript;
 
+	int score = 0;
+	int breaths = 5;
+	int breathCount = 0;
 
-	void Update () 
-	{
+	private string PerfectBreathUID = "";
+
+	void Start(){
+		FizzyoFramework.Instance.Recogniser.BreathStarted += OnBreathStarted;
+		FizzyoFramework.Instance.Recogniser.BreathComplete += OnBreathEnded;
+	}
+
+	void Update(){
+		//get exhale pressure between -1 and 1
+		float pressure = FizzyoFramework.Instance.Device.Pressure();
+		//Debug.Log("Exhale pressure: " + pressure);
+
 		if (Input.GetButtonDown("Fire1") && !isShooting)
 		{
 			LaunchClaw();
 		}
 
 	}
+
+	void OnBreathStarted(object sender)
+	{
+		Debug.Log("Breath started");
+	}
+
+
+	void OnBreathEnded(object sender, ExhalationCompleteEventArgs e)
+	{
+		breathCount++;
+
+		Debug.Log("Breath Quality : " + e.BreathQuality);
+
+		if(e.BreathQuality >= 2){
+			score++;
+		}
+
+		if(e.BreathQuality >= 4){
+			FizzyoFramework.Instance.Achievements.UnlockAchievement(PerfectBreathUID);
+		}
+
+		if(breathCount > breaths){
+			FizzyoFramework.Instance.Achievements.PostScore(score);
+			Application.Quit();
+		}
+
+	}
+
 
 	void LaunchClaw()
 	{

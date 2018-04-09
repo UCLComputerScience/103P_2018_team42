@@ -16,14 +16,18 @@ public class Claw : MonoBehaviour {
 	private bool retracting;
 
 
+
+
 	void Awake ()
 	{
 		lineRenderer = GetComponent<LineRenderer>();
 	}
 
 
-	void Update () 
-	{
+
+
+	void Update(){
+
 		float step = speed * Time.deltaTime;
 		transform.position = Vector3.MoveTowards (transform.position, target, step);
 		lineRenderer.SetPosition(0, origin.position);
@@ -44,7 +48,14 @@ public class Claw : MonoBehaviour {
 	public void ClawTarget (Vector3 pos)
 	{
 		target = pos;
+
+
 	}
+
+
+
+
+
 
 	void OnTriggerEnter (Collider other)
 	{
