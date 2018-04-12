@@ -4,20 +4,8 @@ timeCreated: 18446744011573954816
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Object039
-    400000: //RootNode
-    400002: Object039
-    2300000: Object039
-    3300000: Object039
     4300000: Object039
-    11100000: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Object039Mat
-    second: {fileID: 2100000, guid: e8adcb255ddbfc34683659076bde8124, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 2

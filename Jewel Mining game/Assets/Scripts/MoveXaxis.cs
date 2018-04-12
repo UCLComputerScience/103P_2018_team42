@@ -5,17 +5,18 @@ using UnityEngine;
 public class MoveXaxis : MonoBehaviour {
 
 	Vector3 position;
-	Vector3 posX;
-	Quaternion rot = new Quaternion (0, 0, 90, 0);
+	Quaternion rot = new Quaternion (0, 0, 0, 0);
+	public int yRange = 3;
 
 	// Update is called once per frame
 	void Update () {
-		posX.x = -12;
+
+		Vector3 spawnLoc = new Vector3 (-12, Random.Range (-yRange, yRange), 0);
 
 		position = transform.position;
 		//print (position.x);
 		if (position.x > 11 && position.x < 12) {
-			transform.SetPositionAndRotation(posX,transform.rotation);
+			transform.SetPositionAndRotation(spawnLoc,transform.rotation);
 		}
 
 		transform.Translate (0, 0, -0.03f);

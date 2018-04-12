@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465785, g: 0.49641252, b: 0.574817, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1749,9 +1749,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xRange: 10
   yRange: 3
-  numObjects: 1
+  numObjects: 9
   objects:
-  - {fileID: 1848778856472402, guid: 40258bc488ed44150947c71259e4e7df, type: 2}
+  - {fileID: 1893206817648850, guid: f2249bb0b77504bc394854dbe2d47ae5, type: 2}
+  - {fileID: 1893206817648850, guid: f2249bb0b77504bc394854dbe2d47ae5, type: 2}
+  - {fileID: 1893206817648850, guid: f2249bb0b77504bc394854dbe2d47ae5, type: 2}
+  - {fileID: 1935719547769348, guid: bad8d3f2c59a6404b909a9c12cb176d8, type: 2}
+  - {fileID: 1972124861755972, guid: 3f31c48ca7c44407b94579e603a2b5e9, type: 2}
+  - {fileID: 1871504733876908, guid: 433e831c20e7c4b25a7bac7649e8c398, type: 2}
+  - {fileID: 1871504733876908, guid: 433e831c20e7c4b25a7bac7649e8c398, type: 2}
+  - {fileID: 1826403216226270, guid: fb3dc9c7e5be849309934185c5ccf537, type: 2}
+  - {fileID: 1110596948946122, guid: 4e51764689a614dd1a2b7c369fed7c3e, type: 2}
 --- !u!114 &1968749022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1764,7 +1772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  targetScore: 400
+  targetScore: 1000
   scoreText: {fileID: 857928822}
   youWon: {fileID: 1981385613}
   gameOver: {fileID: 1542171361}

@@ -4,20 +4,8 @@ timeCreated: 18446744011573954816
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Group18603
-    400000: //RootNode
-    400002: Group18603
-    2300000: Group18603
-    3300000: Group18603
     4300000: Group18603
-    11100000: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Group18603Mat
-    second: {fileID: 2100000, guid: b0501d23186dbcb40aa5f0a1003770af, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 2
