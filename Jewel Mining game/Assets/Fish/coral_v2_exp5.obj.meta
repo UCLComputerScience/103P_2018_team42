@@ -4,8 +4,20 @@ timeCreated: 18446744011573954816
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
+    100000: coral_v2_exp007
+    100002: //RootNode
+    400000: coral_v2_exp007
+    400002: //RootNode
+    2300000: coral_v2_exp007
+    3300000: coral_v2_exp007
     4300000: coral_v2_exp007
-  externalObjects: {}
+    11100000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: coral_v2_exp007Mat
+    second: {fileID: 2100000, guid: 2d0d6e0103114c34591793aca26f7f30, type: 2}
   materials:
     importMaterials: 1
     materialName: 2
