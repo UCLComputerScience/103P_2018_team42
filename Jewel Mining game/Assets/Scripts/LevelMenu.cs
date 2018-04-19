@@ -6,17 +6,17 @@ using UnityEngine.SceneManagement;
 public class LevelMenu : MonoBehaviour {
 
 	public void SelectEasy () {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("Day");
     }
 
     public void SelectNormal()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("Sunset");
     }
 
     public void SelectHard()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene("Night");
     }
 
 }
