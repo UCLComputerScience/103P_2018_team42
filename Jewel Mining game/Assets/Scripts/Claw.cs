@@ -14,17 +14,13 @@ public class Claw : MonoBehaviour {
 	private LineRenderer lineRenderer;
 	private bool hitJewel;
 	private bool retracting;
-
-
-
+	Collider m_Collider;
 
 	void Awake ()
 	{
 		lineRenderer = GetComponent<LineRenderer>();
+		m_Collider = GetComponent<Collider>();
 	}
-
-
-
 
 	void Update(){
 
@@ -42,8 +38,10 @@ public class Claw : MonoBehaviour {
 			}
 			Destroy(childObject);
 			gameObject.SetActive(false);
+
 		}
 	}
+
 
 	public void ClawTarget (Vector3 pos)
 	{
@@ -51,10 +49,6 @@ public class Claw : MonoBehaviour {
 
 
 	}
-
-
-
-
 
 
 	void OnTriggerEnter (Collider other)
@@ -76,5 +70,6 @@ public class Claw : MonoBehaviour {
 			childObject = other.gameObject;
 			other.transform.SetParent(this.transform);
 		}
+		//retracting = false;
 	}
 }

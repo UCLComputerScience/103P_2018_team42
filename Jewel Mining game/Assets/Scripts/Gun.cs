@@ -5,7 +5,7 @@ using Fizzyo;
 
 public class Gun : MonoBehaviour {
 
-	public GameObject claw;
+	public GameObject claw;		
 	public bool isShooting;
 	public Animator minerAnimator;
 	public Claw clawScript;
@@ -26,7 +26,7 @@ public class Gun : MonoBehaviour {
 		float pressure = FizzyoFramework.Instance.Device.Pressure();
 		//Debug.Log("Exhale pressure: " + pressure);
 
-		if (Input.GetButtonDown("Fire1") && !isShooting)
+		if (Input.GetButtonDown("Horizontal") && !isShooting)
 		{
 			LaunchClaw();
 		}
@@ -68,7 +68,7 @@ public class Gun : MonoBehaviour {
 		RaycastHit hit;
 		Vector3 down = transform.TransformDirection(Vector3.down);
 
-		if(Physics.Raycast(transform.position, down, out hit, 100))
+		if(Physics.Raycast(transform.position, down, out hit, 80))
 		{
 			claw.SetActive(true);
 			clawScript.ClawTarget(hit.point);

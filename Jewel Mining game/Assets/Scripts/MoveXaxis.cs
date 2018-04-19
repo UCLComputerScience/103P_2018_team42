@@ -7,6 +7,8 @@ public class MoveXaxis : MonoBehaviour {
 	Vector3 position;
 	Quaternion rot = new Quaternion (0, 0, 0, 0);
 	public int yRange = 3;
+	bool free = true;
+
 
 	// Update is called once per frame
 	void Update () {
@@ -19,7 +21,14 @@ public class MoveXaxis : MonoBehaviour {
 			transform.SetPositionAndRotation(spawnLoc,transform.rotation);
 		}
 
-		transform.Translate (0, 0, -0.03f);
+		if (free) {
+			transform.Translate (0, 0, -0.03f);
+		}
 
+	}
+
+	void OnTriggerEnter (Collider col)
+	{
+		free = false;
 	}
 }
