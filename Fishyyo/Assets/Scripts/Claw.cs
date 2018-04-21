@@ -63,7 +63,7 @@ public class Claw : MonoBehaviour {
 			childObject = other.gameObject;
 			other.transform.SetParent(this.transform);
 			m_Collider.enabled = false;
-			//CollectionManager.instance.unlock(0);
+			CollectionManager.instance.unlock(0);
 		}
 
         if (other.gameObject.CompareTag("Mandarin"))
@@ -86,7 +86,7 @@ public class Claw : MonoBehaviour {
 
         if (other.gameObject.CompareTag("Powderbluetang"))
         {
-            //CollectionManager.instance.unlock(3);
+            CollectionManager.instance.unlock(3);
 			hitFish = true;
 			childObject = other.gameObject;
 			other.transform.SetParent(this.transform);

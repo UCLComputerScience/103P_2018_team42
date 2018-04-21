@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Fizzyo/Scenes/Calibration.unity
+- path: Assets/Scenes/Calibration.unity
   isLoaded: 1
   isActive: 1
