@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465785, g: 0.49641252, b: 0.574817, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -891,6 +891,7 @@ GameObject:
   - component: {fileID: 967715294}
   - component: {fileID: 967715293}
   - component: {fileID: 967715292}
+  - component: {fileID: 967715296}
   m_Layer: 0
   m_Name: Fishing
   m_TagString: Untagged
@@ -981,6 +982,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 967715290}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &967715296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 967715290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a6d35441a667bd42881b08d85b5f5c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1002133153
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,6 +1210,7 @@ MonoBehaviour:
   speed: 8
   gun: {fileID: 967715292}
   scoreManager: {fileID: 1968749022}
+  collections: {fileID: 967715296}
 --- !u!54 &1061258610
 Rigidbody:
   m_ObjectHideFlags: 0

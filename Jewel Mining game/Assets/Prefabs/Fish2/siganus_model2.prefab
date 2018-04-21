@@ -385,7 +385,7 @@ GameObject:
   - component: {fileID: 114753810808564162}
   m_Layer: 0
   m_Name: siganus_model2
-  m_TagString: Jewel
+  m_TagString: Siganus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -400,7 +400,7 @@ GameObject:
   - component: {fileID: 114896438126651988}
   m_Layer: 0
   m_Name: mandarinfish_model1
-  m_TagString: Jewel
+  m_TagString: Mandarin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

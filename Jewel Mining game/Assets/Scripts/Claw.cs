@@ -56,20 +56,47 @@ public class Claw : MonoBehaviour {
 		retracting = true;
 		target = origin.position;
 
-//		if (other.gameObject.CompareTag("Jewel"))
-//		{
-//			hitJewel = true;
-//			childObject = other.gameObject;
-//			other.transform.SetParent(this.transform);
-//		}
-//
-//		else 
-		if (other.gameObject.CompareTag("Jewel"))
+        hitJewel = true;
+        childObject = other.gameObject;
+        other.transform.SetParent(this.transform);
+
+        //		if (other.gameObject.CompareTag("Jewel"))
+        //		{
+        //			hitJewel = true;
+        //			childObject = other.gameObject;
+        //			other.transform.SetParent(this.transform);
+        //		}
+        //
+        //		else 
+        if (other.gameObject.CompareTag("Siganus"))
 		{
-			hitJewel = true;
-			childObject = other.gameObject;
-			other.transform.SetParent(this.transform);
+            CollectionManager.instance.unlock(0);
 		}
-		//retracting = false;
-	}
+
+        if (other.gameObject.CompareTag("Mandarin"))
+        {
+            CollectionManager.instance.unlock(1);
+        }
+
+        if (other.gameObject.CompareTag("Yellowtang"))
+        {
+            CollectionManager.instance.unlock(2);
+        }
+
+        if (other.gameObject.CompareTag("Powderbluetang"))
+        {
+            CollectionManager.instance.unlock(3);
+        }
+
+        if (other.gameObject.CompareTag("Crab"))
+        {
+            CollectionManager.instance.unlock(4);
+        }
+
+        if (other.gameObject.CompareTag("Koi"))
+        {
+            CollectionManager.instance.unlock(5);
+        }
+        //retracting = false;
+    }
 }

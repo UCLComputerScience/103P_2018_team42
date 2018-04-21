@@ -4,10 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - jewel
   - Rock
   - Jewel
   - Audio
+  - Siganus
+  - Yellowtang
+  - Mandarin
+  - Powderbluetang
+  - Koi
+  - Crab
+  - SiganusJavus
   layers:
   - Default
   - TransparentFX

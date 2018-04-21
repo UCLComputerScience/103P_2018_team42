@@ -101,7 +101,7 @@ public class CalibrateScene : MonoBehaviour {
     void NextScene()
     {
         //SceneManager.LoadScene(FizzyoFramework.Instance.CallbackScenePath);
-		SceneManager.LoadScene("MainMenu");
+		SceneManager.LoadScene(FizzyoFramework.Instance.CallbackScenePath);
     }
 
 

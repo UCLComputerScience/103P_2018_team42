@@ -430,7 +430,7 @@ GameObject:
   - component: {fileID: 114281376841091642}
   m_Layer: 0
   m_Name: powderbluetang_model1
-  m_TagString: Jewel
+  m_TagString: Powderbluetang
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

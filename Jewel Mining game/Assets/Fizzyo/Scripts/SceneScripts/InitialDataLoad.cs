@@ -87,7 +87,7 @@ public class InitialDataLoad : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
 
-        bool dataLoaded = false;// Load.LoadUserData(gameId, gameSecret);
+        bool dataLoaded = true;// Load.LoadUserData(gameId, gameSecret);
         
         if (!dataLoaded)
         {

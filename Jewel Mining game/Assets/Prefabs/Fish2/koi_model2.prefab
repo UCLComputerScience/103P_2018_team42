@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 114700004756724472}
   m_Layer: 0
   m_Name: koi_model2
-  m_TagString: Jewel
+  m_TagString: Koi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
