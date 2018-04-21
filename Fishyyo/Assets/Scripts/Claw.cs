@@ -63,34 +63,46 @@ public class Claw : MonoBehaviour {
 			childObject = other.gameObject;
 			other.transform.SetParent(this.transform);
 			m_Collider.enabled = false;
-			CollectionManager.instance.unlock(0);
+            if (CollectionManager.instance != null)
+            {
+                CollectionManager.instance.unlock(0);
+            }
 		}
 
         if (other.gameObject.CompareTag("Mandarin"))
         {
-            CollectionManager.instance.unlock(1);
 			hitFish = true;
 			childObject = other.gameObject;
 			other.transform.SetParent(this.transform);
 			m_Collider.enabled = false;
+            if (CollectionManager.instance != null)
+            {
+                CollectionManager.instance.unlock(1);
+            }
         }
 
         if (other.gameObject.CompareTag("Yellowtang"))
         {
-            CollectionManager.instance.unlock(2);
 			hitFish = true;
 			childObject = other.gameObject;
 			other.transform.SetParent(this.transform);
 			m_Collider.enabled = false;
+            if (CollectionManager.instance != null)
+            {
+                CollectionManager.instance.unlock(2);
+            }
         }
 
         if (other.gameObject.CompareTag("Powderbluetang"))
         {
-            CollectionManager.instance.unlock(3);
 			hitFish = true;
 			childObject = other.gameObject;
 			other.transform.SetParent(this.transform);
 			m_Collider.enabled = false;
+            if (CollectionManager.instance != null)
+            {
+                CollectionManager.instance.unlock(3);
+            }
         }
 
         if (other.gameObject.CompareTag("Crab"))
@@ -99,16 +111,22 @@ public class Claw : MonoBehaviour {
 			childObject = other.gameObject;
 			other.transform.SetParent(this.transform);
 			m_Collider.enabled = false;
-			CollectionManager.instance.unlock(4);
+            if (CollectionManager.instance != null)
+            {
+                CollectionManager.instance.unlock(4);
+            }
         }
 
         if (other.gameObject.CompareTag("Koi"))
         {
-            CollectionManager.instance.unlock(5);
 			hitFish = true;
 			childObject = other.gameObject;
 			other.transform.SetParent(this.transform);
 			m_Collider.enabled = false;
+            if (CollectionManager.instance != null)
+            {
+                CollectionManager.instance.unlock(5);
+            }
         }
        
     }
