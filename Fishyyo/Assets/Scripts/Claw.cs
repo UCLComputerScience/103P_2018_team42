@@ -3,15 +3,15 @@ using System.Collections;
 
 public class Claw : MonoBehaviour {
 
-	public Transform origin;
+	public Transform origin;	// where the hook will start
 	public float speed = 4f;
 	public Hook Hook;
 	public ScoreManager scoreManager;
 
 	private Vector3 target;
 	private int fishValue = 100;
-	private GameObject childObject;
-	private LineRenderer lineRenderer;
+	private GameObject childObject;		//used to destroy the fish
+	private LineRenderer lineRenderer;	//used to draw the fishing rope
 	private bool hitFish;
 	private bool retracting;
 	Collider m_Collider;
@@ -24,10 +24,10 @@ public class Claw : MonoBehaviour {
 
 	void Update(){
 
-		float step = speed * Time.deltaTime;
-		transform.position = Vector3.MoveTowards (transform.position, target, step);
-		lineRenderer.SetPosition(0, origin.position);
-		lineRenderer.SetPosition(1, transform.position);
+		float step = speed * Time.deltaTime;	// how much it moves each frame
+		transform.position = Vector3.MoveTowards (transform.position, target, step);	//the position of the claw
+		lineRenderer.SetPosition(0, origin.position);		//draw the line renderer from origin
+		lineRenderer.SetPosition(1, transform.position);	//to the position of the claw
 
 		if(!retracting) m_Collider.enabled = true;
 

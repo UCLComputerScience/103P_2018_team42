@@ -374,12 +374,12 @@ GameObject:
   - component: {fileID: 332843705}
   - component: {fileID: 332843704}
   - component: {fileID: 332843703}
-  - component: {fileID: 332843702}
   - component: {fileID: 332843701}
   - component: {fileID: 332843700}
+  - component: {fileID: 332843702}
   m_Layer: 0
   m_Name: hook
-  m_TagString: Rock
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
