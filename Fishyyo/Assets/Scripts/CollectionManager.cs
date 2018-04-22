@@ -32,7 +32,6 @@ public class CollectionManager : MonoBehaviour {
     public void unlock (int index)
     {
         fishUnlocked[index] = true;
-        Debug.Log(fishUnlocked[index]);
     }
 
     public bool check (int index)

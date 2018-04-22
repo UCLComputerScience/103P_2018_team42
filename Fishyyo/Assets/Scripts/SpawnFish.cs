@@ -2,6 +2,11 @@
 using System.Collections;
 
 public class SpawnFish : MonoBehaviour {
+	
+	/*
+	 this script is for spawning fish (that were specified in the Scoremanager) at random x and y values (in certain ranges)
+	 this adds some randomness to the game
+	 */ 
 
 	public int xRange = 10;
 	public int yRange = 3;
@@ -9,7 +14,6 @@ public class SpawnFish : MonoBehaviour {
 	Quaternion sp = new Quaternion(0,-90,0,90);
 	public GameObject[] objects;
 
-	// Use this for initialization
 	void Start () 
 	{
 		Spawn ();

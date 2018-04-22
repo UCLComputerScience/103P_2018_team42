@@ -10,13 +10,13 @@ public class PowerBar : MonoBehaviour {
     public static float power;
     bool isBreathing;
 
-	// Use this for initialization
+
 	void Start () {
         powerBar = GetComponent<Image>();
         power = 0;
 	}
 	
-	// Update is called once per frame
+
 	void Update () {
         if (Input.GetKeyDown(KeyCode.D))
             isBreathing = true;
@@ -26,7 +26,7 @@ public class PowerBar : MonoBehaviour {
         if (isBreathing)
         {
             power = power + Time.deltaTime * 50f;
-            //Debug.Log(power);
+           
         }
         else
         {

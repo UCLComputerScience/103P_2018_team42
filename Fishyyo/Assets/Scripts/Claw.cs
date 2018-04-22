@@ -2,7 +2,11 @@
 using System.Collections;
 
 public class Claw : MonoBehaviour {
-
+	/*
+	 This script is for generating the claw from the cube at the top that is used to catch the fish
+	 Also, the collections system is implemented at the bottom , where different fish have different tags
+	 this script integrates with the Hook script as they are all part of the fisher
+	 */
 	public Transform origin;	// where the hook will start
 	public float speed = 4f;
 	public Hook Hook;

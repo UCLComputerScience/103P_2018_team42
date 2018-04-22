@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.UI; // unity library for UI
+using UnityEngine.UI; 
 
 public class ScoreManager : MonoBehaviour {
-
+	/*
+	 This script is for implementing the score system at the top left , where each fish is equal to 100 points
+	 */ 
 	public int score = 0;		// the actual score
 	public int targetScore = 400;
 	public Text scoreText;
@@ -14,9 +16,6 @@ public class ScoreManager : MonoBehaviour {
 	void Awake () 
 	{
 		scoreText.text = ("Score: " + score + "/" + targetScore); // initializing scoreText
-
-		//InvokeRepeating("Clock", 0, clockSpeed);// InvokeRepeating allows us to repeatedly call a function , the 2nd parameter is the delay before first call
-		//3rd parameter is the time between each call
 	}
 		
 

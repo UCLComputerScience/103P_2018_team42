@@ -4,7 +4,9 @@ using System.Collections;
 using Fizzyo;
 
 public class Hook : MonoBehaviour {
-
+	/*
+	 This is part of the fisher that is used for emitting the black line (line Renderer) , also most the fizzyo device is integrated here
+	 */
 	public GameObject claw;		
 	public bool isShooting;
 	public Animator minerAnimator;

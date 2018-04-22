@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class LevelMenu : MonoBehaviour {
 
+	/*
+	 this script is for selecting different difficulties and scenes
+	 */ 
 	public void SelectEasy () {
         SceneManager.LoadScene("Day");
     }
