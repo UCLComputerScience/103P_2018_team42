@@ -13,7 +13,7 @@ public class Hook : MonoBehaviour {
 	public Claw clawScript;
 
 	int score = 0;
-	int breaths = 5;
+	int breaths = 35;
 	int breathCount = 0;
 
 	private string PerfectBreathUID = "";
