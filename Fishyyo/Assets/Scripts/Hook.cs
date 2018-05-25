@@ -28,17 +28,18 @@ public class Hook : MonoBehaviour {
 		float pressure = FizzyoFramework.Instance.Device.Pressure();
 		//Debug.Log("Exhale pressure: " + pressure);
 
-		if (Input.GetButtonDown("Horizontal") && !isShooting)
-		{
-			LaunchClaw();
-		}
+		//if (Input.GetButtonDown("Fire1") && !isShooting)
+		//{
+			//LaunchClaw();
+		//}
 
 	}
 
 	void OnBreathStarted(object sender)
 	{
-		//Debug.Log("Breath started");
-	}
+        //Debug.Log("Breath started");
+       // LaunchClaw();
+    }
 
 
 	void OnBreathEnded(object sender, ExhalationCompleteEventArgs e)
@@ -63,7 +64,7 @@ public class Hook : MonoBehaviour {
 	}
 
 
-	void LaunchClaw()
+	public void LaunchClaw()
 	{
 		isShooting = true;
 		minerAnimator.speed = 0;

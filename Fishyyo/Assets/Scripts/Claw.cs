@@ -17,7 +17,7 @@ public class Claw : MonoBehaviour {
 	private GameObject childObject;		//used to destroy the fish
 	private LineRenderer lineRenderer;	//used to draw the fishing rope
 	private bool hitFish;
-	private bool retracting;
+	public bool retracting;
 	Collider m_Collider;
 
 	void Awake ()
@@ -34,6 +34,7 @@ public class Claw : MonoBehaviour {
 		lineRenderer.SetPosition(1, transform.position);	//to the position of the claw
 
 		if(!retracting) m_Collider.enabled = true;
+
 
 		if (transform.position == origin.position && retracting)
 		{
@@ -96,7 +97,7 @@ public class Claw : MonoBehaviour {
                 CollectionManager.instance.unlock(2);
             }
         }
-
+        print(Input.GetJoystickNames());
         if (other.gameObject.CompareTag("Powderbluetang"))
         {
 			hitFish = true;
